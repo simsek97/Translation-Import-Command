@@ -5,14 +5,12 @@ This command can be used to read csv files from a local directory and import the
 ## Local csv files
 
 ```
-
 |-- Users
 |   |-- simsek
-|       |-- translations
-|   |       |-- messages.en.csv
-|   |       |-- messages.es.csv
-|   |       |-- messages.tr.csv
-
+|   |    |-- translations
+|   |    |   |-- messages.en.csv
+|   |    |   |-- messages.es.csv
+|   |    |   |-- messages.tr.csv
 ```
 
 scv files should have key and translation in each line in the format "key","translation" like below
@@ -26,7 +24,14 @@ scv files should have key and translation in each line in the format "key","tran
 From project folder run the command
 
 ```
-./bin/console app:translation:import --path=/Users/simsek/translations --input=csv --output=xff
+./bin/console app:translation:import --path=/Users/simsek/translations --input=csv --output=xlf
 ```
 
-That is it.
+That is it. You should see your translation files under translations folder in your project
+
+```
+|-- translations
+|   |-- messages.en.xlf
+|   |-- messages.es.xlf
+|   |-- messages.tr.xlf
+```
