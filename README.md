@@ -21,7 +21,8 @@ scv files should have key and translation in each line in the format "key","tran
 
 ## Usage
 
-From project folder run the command
+Copy the TranslationImportCommand.php file to the folder src/Command in your project.
+From project folder run the following command
 
 ```
 ./bin/console app:translation:import --path=/Users/simsek/translations --input=csv --output=xlf
