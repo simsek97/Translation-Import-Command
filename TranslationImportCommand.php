@@ -104,14 +104,6 @@ class TranslationImportCommand extends Command
                 ]);
             }
 
-            /*
-            $catalogue->setMetadata('original-content', ['notes' => [
-                ['category' => 'state', 'content' => 'new'],
-                ['category' => 'approved', 'content' => 'true'],
-                ['category' => 'section', 'content' => 'user login', 'priority' => '1'],
-            ]]);
-            */
-
             $dumper = new XliffFileDumper();
             $dumper->formatCatalogue($catalogue, 'messages', [
                 'default_locale'    => $language,
