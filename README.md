@@ -2,9 +2,31 @@
 Translation Import Command for Symfony 4
 This command can be used to read csv files from a local directory and import them into Symfony project (i.e. translations directory)
 
-#Local csv files
+## Local csv files
 
+```
 
-##Usage
-From project folder
-./bin/console app:translation:import --path=/Users/youruser/translations --input=csv --output=xff
+|-- Users
+|   |-- simsek
+|       |-- translations
+|   |       |-- messages.en.csv
+|   |       |-- messages.es.csv
+|   |       |-- messages.tr.csv
+
+```
+
+scv files should have key and translation in each line in the format "key","translation" like below
+```
+"title","Title"
+"author","Author"
+```
+
+## Usage
+
+From project folder run the command
+
+```
+./bin/console app:translation:import --path=/Users/simsek/translations --input=csv --output=xff
+```
+
+That is it.
