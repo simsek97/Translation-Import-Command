@@ -13,7 +13,7 @@ This command can be used to read csv files from a local directory and import the
 |   |    |   |-- messages.tr.csv
 ```
 
-scv files should have key and translation in each line in the format "key","translation" like below
+csv files should have key and translation in each line in the format "key","translation" like below
 ```
 "title","Title"
 "author","Author"
